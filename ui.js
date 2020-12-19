@@ -1,6 +1,5 @@
 /*jshint esversion: 6 */
 
-
 class UI {
     constructor() {
         this.location = document.getElementById('w-location');

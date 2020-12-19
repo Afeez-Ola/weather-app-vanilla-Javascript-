@@ -1,15 +1,18 @@
 /*jshint esversion: 6 */
+const storage = new Storage();
 
-const weather = new Weather('Osogbo', 'Lagos');
+const weatherLocation = storage.getLocationData();
+const weather = new Weather('Osogbo');
 
 const ui = new UI();
 document.addEventListener('DOMContentLoaded', getWeather);
 
-// weather.changeLocation()
+
 document.getElementById('w-change-btn').addEventListener('click', (e) => {
     const city = document.getElementById('city').value;
 
     weather.changeLocation(city);
+    storage.setLocationData(city);
 
     getWeather();
 

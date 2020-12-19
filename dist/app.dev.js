@@ -1,13 +1,15 @@
 "use strict";
 
 /*jshint esversion: 6 */
-var weather = new Weather('Osogbo', 'Lagos');
+var storage = new Storage();
+var weatherLocation = storage.getLocationData();
+var weather = new Weather('Osogbo');
 var ui = new UI();
-document.addEventListener('DOMContentLoaded', getWeather); // weather.changeLocation()
-
+document.addEventListener('DOMContentLoaded', getWeather);
 document.getElementById('w-change-btn').addEventListener('click', function (e) {
   var city = document.getElementById('city').value;
   weather.changeLocation(city);
+  storage.setLocationData(city);
   getWeather();
   document.getElementById('locModal').style.display = 'hide';
 });
