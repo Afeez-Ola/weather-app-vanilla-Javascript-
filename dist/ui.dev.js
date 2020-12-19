@@ -30,12 +30,11 @@ function () {
       this.location.textContent = weather.location.name;
       this.desc.textContent = weather.current.weather_descriptions;
       this.string.textContent = Math.floor(weather.current.temperature) + '°C';
-      this.icon.setAttribute('src', weather.current.weather_icons); // this.icon.textContent = weather.weather.icon;
-
+      this.icon.setAttribute('src', weather.current.weather_icons);
       this.humidity.textContent = "Relative Humidity: ".concat(weather.current.humidity);
       this.pressure.textContent = "Relative Pressure: ".concat(weather.current.pressure);
       this.wind.textContent = "Relative Wind: ".concat(weather.current.wind_speed);
-      this.feelsLike.textContent = "Feels Like: ".concat(weather.current.feelslike); // this.humidity.textContent = `Relative Humidity: ${weather.current.humidity}`;
+      this.feelsLike.textContent = "Feels Like: ".concat(weather.current.feelslike);
     }
   }]);
 

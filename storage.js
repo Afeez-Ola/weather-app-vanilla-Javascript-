@@ -17,7 +17,7 @@ class Storage {
         }
     }
 
-    setLocationData(city, state) {
+    setLocationData(city) {
         localStorage.setItem('city', city);
     }
 }

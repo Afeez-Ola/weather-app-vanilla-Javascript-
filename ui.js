@@ -18,11 +18,9 @@ class UI {
         this.desc.textContent = weather.current.weather_descriptions;
         this.string.textContent = Math.floor(weather.current.temperature) + '°C';
         this.icon.setAttribute('src', weather.current.weather_icons);
-        // this.icon.textContent = weather.weather.icon;
         this.humidity.textContent = `Relative Humidity: ${weather.current.humidity}`;
         this.pressure.textContent = `Relative Pressure: ${weather.current.pressure}`;
         this.wind.textContent = `Relative Wind: ${weather.current.wind_speed}`;
         this.feelsLike.textContent = `Feels Like: ${weather.current.feelslike}`;
-        // this.humidity.textContent = `Relative Humidity: ${weather.current.humidity}`;
     }
 }

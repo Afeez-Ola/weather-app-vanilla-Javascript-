@@ -10,11 +10,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var Weather =
 /*#__PURE__*/
 function () {
-  function Weather(city, state) {
+  function Weather(city) {
     _classCallCheck(this, Weather);
 
     this.apiKey = '1fb1165b469e18f05af773e3e1adb3ff';
-    this.state = state;
     this.city = city;
   }
 
@@ -47,8 +46,8 @@ function () {
     }
   }, {
     key: "changeLocation",
-    value: function changeLocation(city, state) {
-      this.city = city; // this.state = state;
+    value: function changeLocation(city) {
+      this.city = city;
     }
   }]);
 

@@ -1,8 +1,7 @@
 /*jshint esversion: 6 */
 class Weather {
-    constructor(city, state) {
+    constructor(city) {
         this.apiKey = '1fb1165b469e18f05af773e3e1adb3ff';
-        this.state = state;
         this.city = city;
     }
 
@@ -17,8 +16,7 @@ class Weather {
 
     }
 
-    changeLocation(city, state) {
+    changeLocation(city) {
         this.city = city;
-        // this.state = state;
     }
 }

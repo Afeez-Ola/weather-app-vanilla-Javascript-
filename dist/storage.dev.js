@@ -32,7 +32,7 @@ function () {
     }
   }, {
     key: "setLocationData",
-    value: function setLocationData(city, state) {
+    value: function setLocationData(city) {
       localStorage.setItem('city', city);
     }
   }]);
