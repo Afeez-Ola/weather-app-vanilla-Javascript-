@@ -1,6 +1,6 @@
 "use strict";
-'esversion:6';
 
+/*jshint esversion: 6 */
 var weather = new Weather('Osogbo', 'Lagos');
 var ui = new UI();
 document.addEventListener('DOMContentLoaded', getWeather); // weather.changeLocation()

@@ -1,4 +1,4 @@
-'esversion:6';
+/*jshint esversion: 6 */
 class Weather {
     constructor(city, state) {
         this.apiKey = '1fb1165b469e18f05af773e3e1adb3ff';
