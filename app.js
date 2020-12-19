@@ -1,4 +1,4 @@
-'esversion:6';
+/*jshint esversion: 6 */
 
 const weather = new Weather('Osogbo', 'Lagos');
 
